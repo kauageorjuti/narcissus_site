@@ -122,3 +122,23 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b8
 @media(max-width:1000px){.about-section{padding:78px 28px 84px}.about-heading h2{font-size:42px}.about-main{gap:5%}.about-main .about-visual{min-height:360px}.about-main .about-copy{padding-right:2%}.about-principles{grid-template-columns:1fr 1fr;gap:22px 26px}.principles-heading{grid-row:span 1}}
 @media(max-width:720px){.about-section{padding:71px 23px 75px}.about-heading{display:block;margin-bottom:27px}.about-heading .eyebrow{margin-bottom:14px}.about-heading h2{font-size:38px}.about-heading>p:last-child{margin:13px 0 0;font-size:11px}.about-main{grid-template-columns:1fr;gap:17px}.about-main .about-visual{min-height:315px;height:315px}.about-main .about-copy{max-width:none;padding:22px 1px 16px}.about-main .about-lede{font-size:20px}.about-main .about-copy>p:not(.about-lede){font-size:11px}.about-main .about-sticker{width:92px;height:92px;font-size:11px}.about-main .about-side-note{left:17px;bottom:20px}.about-photo-caption{right:15px;bottom:20px;font-size:7px}.about-studies{grid-template-columns:1fr;gap:9px;margin-top:12px}.about-study{min-height:225px;padding:20px}.about-study h3{font-size:22px}.about-principles{grid-template-columns:1fr 1fr;gap:22px 15px;margin-top:50px;padding-top:27px}.principles-heading{grid-column:1/-1}.principles-heading h3{font-size:25px}.about-principles article{padding-left:12px}.about-principles article p{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.about-study{transition:none!important}}
+.arrow-icon,.down-icon,.spark-icon,.ring-icon,.eye-icon,.pin-svg{display:inline-block;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.arrow-icon{width:14px;height:14px}
+.down-icon{width:16px;height:16px}
+.spark-icon{width:18px;height:18px}
+.ring-icon,.eye-icon{width:16px;height:16px}
+.pin-svg{width:22px;height:22px}
+.art-stamp .spark-icon{width:28px;height:28px;stroke-width:1.5}
+.card-icon .ring-icon,.card-icon .eye-icon,.card-icon .spark-icon,.card-icon .arrow-icon{width:16px;height:16px}
+.card-illustration .spark-icon{width:14px;height:14px;stroke-width:1.6}
+.about-sticker .spark-icon{width:16px;height:16px}
+.study-symbol .ring-icon,.study-symbol .spark-icon{width:18px;height:18px}
+.motion-enabled [data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .62s ease,transform .62s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms);will-change:opacity,transform}
+.motion-enabled [data-reveal].is-visible,.motion-enabled [data-reveal]:focus-within{opacity:1;transform:translateY(0);will-change:auto}
+@media(hover:none),(pointer:coarse){
+  a:active,.button:active,.contact-socials a:active{transform:scale(.98);transition:transform .12s ease}
+  .service-card:active{transform:scale(.995);transition:transform .12s ease}
+}
+@media(prefers-reduced-motion:reduce){
+  .motion-enabled [data-reveal]{opacity:1!important;transform:none!important;transition:none!important;will-change:auto!important}
+}
